@@ -1,6 +1,6 @@
 title: Cannabis Consulting | Growing Gold
-author: 
-email: 
+author: Growing Gold
+email: ggconsulting@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
   Innovative cannabis consulting for commercial and residential facilities within
   the United States. 
@@ -32,6 +32,10 @@ minima:
 
 # Build settings
 theme: minima
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
 plugins:
  - jekyll-feed
