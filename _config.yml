@@ -1,0 +1,38 @@
+title: Cannabis Consulting | Growing Gold
+author: 
+email: 
+description: > # this means to ignore newlines until "show_exerpts:"
+  Innovative cannabis consulting for commercial and residential facilities within
+  the United States. 
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+  social_links:
+    # twitter: jekyllrb
+    # github:  jekyll
+    # rss: rss
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    # linkedin: jekyll
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+
+# Build settings
+theme: minima
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
