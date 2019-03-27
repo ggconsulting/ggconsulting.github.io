@@ -4388,11 +4388,19 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #3d3d3d;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   margin: 75px auto;
+  color:#fff;
+  overflow:hidden;
+}
+.card .card-icon-bg {
+  background: #f9f9f9;
+  position:absolute;
+  height: 150px;
+  width: 150px;
 }
 
 .card > hr {
