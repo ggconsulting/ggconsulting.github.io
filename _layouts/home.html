@@ -49,61 +49,89 @@ layout: default
       </div><!-- /row -->
     
     <div class="row" style="padding-top:25px">
+        <div class="col-12 col-sm-6">
+
+  <div><i class="fas fa-chalkboard-teacher"></i></div>
+
+        </div><!-- /col-6 -->
+
       <div class="col-12 col-sm-6">
-          <div class="card" style="width: 18rem;">
-  <div class="card-icon-top"><i class="fas fa-leaf"></i></div>
-  <div class="card-body">
-      <div class="card-icon-bg"></div>
-    <h5 class="card-title text-center">Business Consulting</h5>
+          
+          <div>
+    <h5 class="card-title text-center">Operations</h5>
     <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-success">Learn More</a>
   </div>
-</div>
+          
+        </div><!-- /col-6 -->
+</div><!-- /row -->
+    
+     <div class="row" style="padding-top:25px">
+      <div class="col-12 col-sm-6">
+          
+          <div>
+    <h5 class="card-title text-center">Operations</h5>
+    <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+          
+        </div><!-- /col-6 -->
+         <div class="col-12 col-sm-6">
+
+  <div><i class="fas fa-chalkboard-teacher"></i></div>
+
+        </div><!-- /col-6 -->
+</div><!-- /row -->
+    
+     <div class="row" style="padding-top:25px">
+        <div class="col-12 col-sm-6">
+
+  <div><i class="fas fa-chalkboard-teacher"></i></div>
+
+        </div><!-- /col-6 -->
+
+      <div class="col-12 col-sm-6">
+          
+          <div>
+    <h5 class="card-title text-center">Operations</h5>
+    <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+          
+        </div><!-- /col-6 -->
+</div><!-- /row -->
+    
+     <div class="row" style="padding-top:25px">
+      <div class="col-12 col-sm-6">
+          
+          <div>
+    <h5 class="card-title text-center">Operations</h5>
+    <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+          
         </div><!-- /col-6 -->
         <div class="col-12 col-sm-6">
-          <div class="card" style="width: 18rem;">
-  <div class="card-icon-top"><i class="fas fa-chalkboard-teacher"></i></div>
-  <div class="card-body">
-    <h5 class="card-title text-center">Operations</h5>
-    <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-success">Learn More</a>
-  </div>
-</div>
+
+  <div><i class="fas fa-chalkboard-teacher"></i></div>
+
         </div><!-- /col-6 -->
-    </div><!-- /row -->
+</div><!-- /row -->
     
-    <div class="row" style="padding-bottom:25px">
-      <div class="col-12 col-sm-4">
-          <div class="card" style="width: 18rem;">
-  <div class="card-icon-top"><i class="fas fa-leaf"></i></div>
-  <div class="card-body">
-    <h5 class="card-title text-center">Business Consulting</h5>
-    <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-success">Learn More</a>
-  </div>
-</div>
-        </div><!-- /col-4 -->
-        <div class="col-12 col-sm-4">
-          <div class="card" style="width: 18rem;">
-  <div class="card-icon-top"><i class="fas fa-columns" style="padding-left:5px"></i></div>
-  <div class="card-body">
-    <h5 class="card-title text-center">Design &amp; Layout</h5>
-    <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-success">Learn More</a>
-  </div>
-</div>
-        </div><!-- /col-4 -->
-        <div class="col-12 col-sm-4">
-          <div class="card" style="width: 18rem;">
-  <div class="card-icon-top"><i class="fas fa-chalkboard-teacher"></i></div>
-  <div class="card-body">
+     <div class="row" style="padding-top:25px">
+        <div class="col-12 col-sm-6">
+
+  <div><i class="fas fa-chalkboard-teacher"></i></div>
+
+        </div><!-- /col-6 -->
+
+      <div class="col-12 col-sm-6">
+          
+          <div>
     <h5 class="card-title text-center">Operations</h5>
     <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-success">Learn More</a>
   </div>
-</div>
-        </div><!-- /col-4 -->
-    </div><!-- /row -->
+          
+        </div><!-- /col-6 -->
+</div><!-- /row -->
+
+    
     
     <div class="row row-adjust">
       <div class="full-width-img full-width-img-1 row">
@@ -137,22 +165,25 @@ layout: default
     
     
     <div class="row row-adjust">
-    <div class="col">
-        <div class="content-block">
-        <h3 class="text-center">Latest Articles</h3>
+
         
       <article class="blog-preview-box">
         {% for post in site.posts limit:5  %}
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
           
+          <div class="blog-preview-item col-12 col-sm-6">
 		<h3 class="blog-preview-title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
           <div class="blog-preview-date"><span class="post-meta">{{ post.date | date: date_format }}</span></div>
+              </div><!-- .blog-preview-item -->
+          <div class="blog-preview-item col-12 col-sm-6">
+		<h3 class="blog-preview-title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+          <div class="blog-preview-date"><span class="post-meta">{{ post.date | date: date_format }}</span></div>
+              </div><!-- .blog-preview-item -->
 	
 
  {% endfor %}
-	</article>
-            </div>
-    </div>
-  </div>
+	</article><!-- .blog-preview-box -->
 
-</section>
+  </div><!-- .row -->
+
+</section><!-- .container-fluid -->
