@@ -603,7 +603,8 @@ pre code {
   margin-left: -15px;
 }
 .full-width-img {
-    height:60vh;
+    height:auto;
+    min-height:60vh;
     width: 100vw;
     position:relative;
     color:#fff;
@@ -612,12 +613,20 @@ pre code {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
     /* portrait tablets & up */
 @media all and (min-width: 40.5em) {
     .full-width-img {
        height: 85vh;
     }
-}
+    .navbar-collapse {
+       padding-top: 50px;
+    }
+    .card-text {
+       padding: 0 20%;
+    }
+}/* portrait tablets & up media query */
+
 .full-width-img::before {
     content: " ";
     position: absolute;
@@ -4283,7 +4292,9 @@ input[type="button"].btn-block {
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
 }
-
+.navbar-collapse {
+    padding-top: 50px;
+}
 .navbar-expand .navbar-toggler {
   display: none;
 }
@@ -4308,8 +4319,9 @@ input[type="button"].btn-block {
 }
 .navbar-light .navbar-toggler .navbar-toggler-bar {
     background:#fff;
-    height: 4px;
+    height: 3px;
     width: 100%;
+    margin: 8px 0;
 }
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
@@ -4447,9 +4459,8 @@ input[type="button"].btn-block {
   margin-top: -0.375rem;
   margin-bottom: 0;
 }
-
-.card-text:last-child {
-  margin-bottom: 0;
+.card-text {
+    padding: 0 25px 25px 25px;
 }
 
 .card-link:hover {
