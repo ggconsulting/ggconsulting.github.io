@@ -603,7 +603,7 @@ pre code {
   margin-left: -15px;
 }
 .full-width-img {
-    height: 85vh;
+    height:60vh;
     width: 100vw;
     position:relative;
     color:#fff;
@@ -611,6 +611,12 @@ pre code {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+    /* portrait tablets & up */
+@media all and (min-width: 40.5em) {
+    .full-width-img {
+       height: 85vh;
+    }
 }
 .full-width-img::before {
     content: " ";
@@ -4296,6 +4302,15 @@ input[type="button"].btn-block {
     z-index: 99;
     top: 5px;
 }
+.navbar-light .navbar-toggler .navbar-toggler-icon {
+    height: 40px;
+    width: 40px;
+}
+.navbar-light .navbar-toggler .navbar-toggler-bar {
+    background:#fff;
+    height: 4px;
+    width: 100%;
+}
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: #fff;
@@ -4319,15 +4334,6 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
   color: #fff;
-}
-
-.navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .navbar-light .navbar-text {
@@ -5551,8 +5557,8 @@ button.close {
 footer {
     background:#3d3d3d;
     color:#fff;
-    height: 100%;
-    padding: 50px 10px 0px 10px;
+    height: auto;
+    padding: 50px 10px 10px 10px;
 }
 footer .footer-nav {
     list-style-type: none;
