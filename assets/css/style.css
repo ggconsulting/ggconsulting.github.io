@@ -168,18 +168,6 @@ sup {
   top: -.5em;
 }
 
-a {
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
 a:not([href]):not([tabindex]) {
   color: inherit;
   text-decoration: none;
@@ -630,6 +618,9 @@ pre code {
 .full-width-img-2 {
     background:url('../img/landing-image.jpg') fixed center;
     background-size: contain;
+}
+.full-width-img-3 {
+    background:url('../img/cannabis-flower-full.jpg') fixed center;
 }
 
 .no-gutters {
@@ -1551,6 +1542,22 @@ pre code {
 }
 
 
+a {
+  color: #008000;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+a:hover {
+  color: #00b300;
+  text-decoration: underline;
+}
+.blog-preview-box .blog-preview-title {
+    color: #008000;
+}
+.blog-preview-box .blog-preview-title {
+    color: #00b300;
+}
 .blog-preview-box {
     max-height: 85vh;
     overflow-y: scroll;
