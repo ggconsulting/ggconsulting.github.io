@@ -1552,6 +1552,8 @@ pre code {
 
 .blog-preview-box {
     padding: 20px;
+    max-height: 85vh;
+    overflow-y: scroll;
 }
 
 
@@ -8830,7 +8832,7 @@ button.bg-light:focus {
        height: 85vh;
     }
     .navbar-collapse {
-       padding-top: 50px;
+       padding: 0px;
     }
     .card-title {
         font-size: 2em;
