@@ -628,7 +628,8 @@ pre code {
     background: url('https://icdn4.digitaltrends.com/image/cannabis_feat.jpg?ver=1') center;
 }
 .full-width-img-2 {
-    background:url('../img/landing-image.jpg') center;
+    background:url('../img/landing-image.jpg') fixed center;
+    background-size: contain;
 }
 
 .no-gutters {
@@ -1551,9 +1552,14 @@ pre code {
 
 
 .blog-preview-box {
-    padding: 20px;
     max-height: 85vh;
     overflow-y: scroll;
+}
+.blog-preview-item {
+    padding: 20px;
+}
+.blog-preview-item::nth-child(odd) {
+    background: #e0e0e0;
 }
 
 
@@ -8835,11 +8841,16 @@ button.bg-light:focus {
        padding: 0px;
     }
     .card-title {
-        font-size: 2em;
+        font-size: 1.65em;
     }
     .card-text {
-       font-size: 1.65em;
-       padding: 0 20%;
+       font-size: 1.25em;
+    }
+    .card-text::nth-child(odd) {
+        padding: 0 10% 10% 0;
+    }
+    .card-text::nth-child(even) {
+        padding: 0 0 10% 10%;
     }
 }/* portrait tablets & up media query */
 
