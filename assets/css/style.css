@@ -49,6 +49,14 @@ html {
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
 }
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 @-ms-viewport {
   width: device-width;
@@ -67,8 +75,6 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-    overflow-x: hidden;
-    max-width:100vw;
 }
 
 [tabindex="-1"]:focus {
@@ -606,7 +612,7 @@ pre code {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.full-width-img-1::before {
+.full-width-img::before {
     content: " ";
     position: absolute;
     top: 0;
@@ -618,6 +624,9 @@ pre code {
 }
 .full-width-img-1 {
     background: url('https://icdn4.digitaltrends.com/image/cannabis_feat.jpg?ver=1') center;
+}
+.full-width-img-2 {
+    background:url('../img/landing-image.jpg') center;
 }
 
 .no-gutters {
