@@ -1568,6 +1568,12 @@ a:hover {
 .blog-preview-item::nth-child(odd) {
     background: #e0e0e0;
 }
+.overlay-title {
+    position: relative;
+    top: 200px;
+    left: 100px;
+    width: 70%;
+}
 
 
 .table {
@@ -4460,9 +4466,12 @@ input[type="button"].btn-block {
   margin-top: -0.375rem;
   margin-bottom: 0;
 }
-.card-text {
+
+
+.card-title, .card-text {
     padding: 0 25px 25px 25px;
 }
+
 
 .card-link:hover {
   text-decoration: none;
@@ -8853,11 +8862,15 @@ button.bg-light:focus {
     .card-text {
        font-size: 1.25em;
     }
-    .card-text::nth-child(odd) {
+    .card-title, .card-text::nth-child(odd) {
         padding: 0 10% 10% 0;
     }
-    .card-text::nth-child(even) {
+    .card-title, .card-text::nth-child(even) {
         padding: 0 0 10% 10%;
+    }
+    .overlay-title {
+        top: 50%;
+        left: 55%;
     }
 }/* portrait tablets & up media query */
 
