@@ -10,7 +10,7 @@ layout: default
           </div>
 </div><!-- /full-width-img -->
     
-    <div class="row" style="padding-top:25px">
+    <div class="row" style="padding-top:75px">
         <div class="col-12 col-sm-6">
 
   <div><img src="{{ "/assets/img/seed-icon.png" | relative_url }}" class="img-icon"></div>
@@ -28,7 +28,7 @@ layout: default
         </div><!-- /col-6 -->
 </div><!-- /row -->
     
-     <div class="row" style="padding-top:25px">
+     <div class="row" style="padding-top:10px">
       <div class="col-12 col-sm-6 order-2 order-sm-1">
           
           <div>
@@ -85,7 +85,7 @@ layout: default
 
         </div><!-- /col-6 -->
 
-      <div class="col-12 col-sm-6">
+      <div class="col-12 col-sm-6" style="padding-top:25px">
           
           <div>
     <h5 class="card-title text-left">Why Us?</h5>
@@ -128,7 +128,7 @@ layout: default
     </div>
     
     
-    <div class="row row-adjust">
+    <div class="row">
       <div class="col-12 col-sm-6">
        <article class="blog-preview-box">
         {% for post in site.posts limit:5  %}
@@ -136,10 +136,15 @@ layout: default
           
          <div class="blog-preview-item">
 		  <h4 class="blog-preview-title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
-          <div class="blog-preview-date"><span class="post-meta">{{ post.date | date: date_format }}</span></div>
+          <div class="blog-preview-date">
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+             </div>
               <div class="blog-preview-excerpt">
                {{ post.excerpt }}
               </div>
+             <div class="btn btn-success">
+              <a href="{{ post.url | relative_url }}">Read More</a>
+             </div>
           </div><!-- .blog-preview-item -->
 
  {% endfor %}
