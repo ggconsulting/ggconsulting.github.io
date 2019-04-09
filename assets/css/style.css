@@ -5558,6 +5558,10 @@ footer {
 footer .footer-nav {
     list-style-type: none;
 }
+footer .footer-nav li {
+    display: inline;
+    margin: 0 5px;
+}
 
 .tooltip {
   position: absolute;
