@@ -622,6 +622,9 @@ pre code {
 .full-width-img-3 {
     background:url('../img/cannabis-flower-full.jpg') fixed center;
 }
+.full-width-img-4 {
+    background:url('../img/cannabis-office-space.jpg') fixed center;
+}
 
 .no-gutters {
   margin-right: 0;
@@ -2526,6 +2529,10 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
+.btn-success a {
+    color: #fff;
+}
+
 .btn-info {
   color: #fff;
   background-color: #17a2b8;
@@ -4416,40 +4423,7 @@ input[type="button"].btn-block {
 }
 
 .card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #3d3d3d;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  margin: 75px auto;
-  color:#fff;
-}
-.card .card-icon-bg {
-  background: #f9f9f9;
-  position:absolute;
-  height: 150px;
-  width: 150px;
-}
-
-.card > hr {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.card > .list-group:first-child .list-group-item:first-child {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-
-.card > .list-group:last-child .list-group-item:last-child {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  padding-top:10px;
 }
 
 .card-body {
@@ -8855,6 +8829,9 @@ button.bg-light:focus {
     }
     .navbar-collapse {
        padding: 0px;
+    }
+    .card {
+        padding-top:150px;
     }
     .card-title {
         font-size: 1.65em;
