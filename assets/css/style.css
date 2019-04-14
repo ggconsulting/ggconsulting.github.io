@@ -4321,7 +4321,7 @@ input[type="button"].btn-block {
     width: 84px;
     display: inline-block;
     border-radius: 50%;
-    border: 2px solid #9a9a9a;
+    border: 3px solid #3d3d3d;
     background: #fff;
     position: absolute;
     z-index: 99;
